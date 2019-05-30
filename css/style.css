@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+font-family: 'Roboto';
+src: url('Roboto.eot');
+src: url('Roboto.eot') format('embedded-opentype'),
+     url('Roboto.woff2') format('woff2'),
+     url('Roboto.woff') format('woff'),
+     url('Roboto.ttf') format('truetype'),
+     url('Roboto.svg#Roboto') format('svg');
 
 /*  THIS CONFLICTS WITH OTHER STYLE SHEET */
 /*
@@ -31,7 +39,7 @@ body {
 
 .container p span.typed-text {
   text-rendering:optimizeLegibility;
-  font-family: 'roboto';
+  font-family: 'Roboto';
   font-weight: 600;
   color: #4f57c7;
   font-size: 300%;
