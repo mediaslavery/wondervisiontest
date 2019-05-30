@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*  THIS CONFLICTS WITH OTHER STYLE SHEET */
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #eee;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+*/
+
+.container p span.typed-text {
+  font-family: 'roboto';
+  font-weight: 600;
+  color: #4f57c7;
+  font-size: 300%;
+  height: 40px; /* don't know wtf this is but it vertically alligned shit*/
+      display: table-cell;
+      vertical-align: middle;
+
+}
+
+.container p span.cursor {
+
+  background-color: #4f57c7;
+  margin-left: 0.1rem;
+  width: 3px;
+
+  animation: blink 1s infinite;
+  height: 90px; /* don't know wtf this is but it vertically alligned shit*/
+    display: table-cell;
+    vertical-align: middle;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #4f57c7; }
+  49% { background-color: #4f57c7; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #4f57c7; }
+}
