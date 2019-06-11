@@ -1,0 +1,1 @@
+index.js is the first script, i just didn't want to rename cause it's annoying

@@ -42,7 +42,7 @@ body {
   text-rendering:optimizeLegibility;
   font-family: 'roboto';
   font-weight: 600;
-  color: #4f57c7;
+  color: #5057c8;
   font-size: 300%;
   height: 40px; /* don't know wtf this is but it vertically alligned shit*/
       display: table-cell;
@@ -52,7 +52,7 @@ body {
 
 .container p span.cursor {
 
-  background-color: #4f57c7;
+  background-color: #5057c8;
   margin-left: 0.1rem;
   width: 3px;
 
@@ -65,9 +65,65 @@ body {
   animation: none;
 }
 @keyframes blink {
-  0%  { background-color: #4f57c7; }
-  49% { background-color: #4f57c7; }
+  0%  { background-color: #5057c8; }
+  49% { background-color: #5057c8; }
   50% { background-color: transparent; }
   99% { background-color: transparent; }
-  100%  { background-color: #4f57c7; }
+  100%  { background-color: #5057c8; }
+}
+
+
+/* ----VIDEO STUFF----- */
+
+.demoreel {
+  text-align:center;
+  width:100%;
+}
+/*
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+  left: 14%; /* this fixed centering issue */
+
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+  width:70%;
+	height:70%;
+
+}
+
+/* FADE IN EFFECT */
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+	-webkit-animation: fadeIn .5s ease-in 1 forwards;
+  animation: fadeIn .5s ease-in 1 forwards;
+  opacity: 0;
+  font-size: 70%;
+  font-family: 'roboto';
+  font-weight: 300;
 }
